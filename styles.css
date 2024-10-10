@@ -129,15 +129,15 @@ section {
 }
 
 .mens-banner__image {
-  height: 100%;
   background: url(images/mens_outerwear.jpg);
-  background-size: 250%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
+
 .ladies-banner__image {
-  height: 100%;
   background: url(images/ladies_outerwear.jpg);
+}
+
+.bg__image {
+  height: 100%;
   background-size: 250%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -157,15 +157,16 @@ section {
 .ladies-tShirts-banner {
   width: 50%;
 }
-.mens-tShirts-banner .mens-banner__image {
+
+.mens__t-shirts{
   background: url(images/mens_tshirts.jpg);
-  height: 100%;
-  background-size: 500%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
-.ladies-tShirts-banner .ladies-banner__image {
+.ladies__t-shirts{
   background: url(images/ladies_tshirts.jpg);
+}
+
+.banner__image {
+  height: 100%;
   background-size: 500%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
