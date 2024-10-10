@@ -1,20 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /* Navbar Styles */
 
 .navbar {
-  height: 9vh;
+  height: 6.4rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 .container {
   height: 100%;
   width: 100%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -29,14 +38,131 @@ body {
 /* End */
 
 .logo {
-  height: 1.5rem;
-  margin: 0.5rem auto;
+  height: 5rem;
+  width: 10rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
-.cart__icon {
-  height: 1.5rem;
-  margin: 0.5rem 2rem;
+.cart-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem 2rem;
+}
+.cart--icon__image {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem;
 }
 .hamburger--icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  /* padding: 0.5rem; */
+  /* margin: 0.5rem 2rem; */
+}
+
+/* Banner Section */
+section {
+  margin: 0 0 4rem 0;
+}
+.banner {
+  height: 35.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner__bottom {
   height: 40%;
-  margin: 0.5rem 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner__label {
+  font-size: 1.8rem;
+  margin: 2.4rem auto;
+}
+
+.banner__button {
+  height: 4.1rem;
+  width: 16.9rem;
+  padding: 0.8rem 4.4rem;
+  border: 2px solid black;
+}
+
+.mens-banner__image {
+  height: 100%;
+  background: url(images/mens_outerwear.jpg);
+  background-size: 280%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.ladies-banner__image {
+  height: 100%;
+  background: url(images/ladies_outerwear.jpg);
+  background-size: 280%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.t-shirts {
+  display: flex;
+  margin-bottom: 0;
+}
+.mens-tShirts-banner {
+  width: 50%;
+}
+.ladies-tShirts-banner {
+  width: 50%;
+}
+.mens-tShirts-banner .mens-banner__image {
+  background: url(images/mens_tshirts.jpg);
+  height: 100%;
+  background-size: 500%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.ladies-tShirts-banner .ladies-banner__image {
+  background: url(images/ladies_tshirts.jpg);
+  background-size: 500%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* Footer */
+.footer {
+  height: 6.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.made-by {
+  height: 1.5rem;
+  width: 10.1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: gray;
+}
+.demo-only {
+  background-color: black;
+  color: white;
+  height: 3.6rem;
+  width: 12rem;
+  font-size: 1.5rem;
+  margin: 0.8rem 15.5rem 0 15.5rem;
+  padding: 0.6rem;
 }
