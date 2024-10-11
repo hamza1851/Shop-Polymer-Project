@@ -244,10 +244,50 @@ section {
 } */
 
 /* Mens Outerwear Page*/
-.mens-outerwear-page{
+.mens-outerwear-page {
   margin: 0;
+  display: none;
 }
-.items__count{
+.mens-outer__header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.items__count {
   opacity: 0.5;
   font-size: 1.3rem;
+}
+
+.product {
+  height: 25vh;
+  width: 45vw;
+  margin: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product__image {
+  height: 80%;
+}
+
+.title {
+  height: 10%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  opacity: 0.5;
+  font-size: 1.3rem;
+}
+
+.products-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(16, 1fr); */
 }
