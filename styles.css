@@ -306,7 +306,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
 }
 
 .details {
@@ -355,9 +354,7 @@ section {
   align-items: center;
   gap: 5rem;
 }
-.size {
-  /* gap: 2.1rem; */
-}
+
 #size__label,
 #quantity__label {
   opacity: 0.5;
