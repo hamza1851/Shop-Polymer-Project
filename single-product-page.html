@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="menu">
+          <img class="hamburger--icon" src="images/arrow.png" alt="Menu" />
+        </div>
+        <a class="logo" href="index.html"
+          ><img class="logo" src="images/logo.svg" alt=""
+        /></a>
+        <a class="cart-icon" href="cart-page.html"
+          ><img class="cart--icon__image" src="images/cart-icon.png" alt="Cart"
+        /></a>
+      </div>
+      <div class="nav__links">
+        <a class="nav__link" href="mens-outerwear.html">Men's Outerwear</a>
+        <a class="nav__link" href="ladies-outerwear.html">Ladies Outerwear</a>
+        <a class="nav__link" href="mens-tshirts.html">Men's T-Shirts</a>
+        <a class="nav__link" href="ladies-tshirts.html">Ladies T-Shirts</a>
+      </div>
+    </nav>
+    <!-- Drawer -->
+    <aside class="drawer">
+      <a class="drawer__item" href="mens-outerwear.html">Mens's Outerwear</a>
+      <a class="drawer__item" href="ladies-outerwear.html">Ladies Outerwear</a>
+      <a class="drawer__item" href="mens-tshirts.html">Men's T-Shirts</a>
+      <a class="drawer__item" href="ladies-tshirts.html">Ladies T-Shirts</a>
+    </aside>
+    <div class="single-product">
+      <img
+        src="images/Items-Images/10-11017A.jpg"
+        alt=""
+        class="single-product__image"
+      />
+      <div class="details">
+        <h1 class="product__title">Tri-Blend G Logo Men's Polo</h1>
+        <div class="product__price">$32.70</div>
+        <div class="pickers">
+          <div class="size">
+            <label id="size__label">Size</label>
+            <select id="size__select">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M" selected="">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+            <div>
+              <div></div>
+            </div>
+          </div>
+          <div class="quantity">
+            <label id="quantity__label">Quantity</label>
+            <select id="quantity__select">
+              <option value="1" selected="">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="description">
+          <h2>Description</h2>
+          <p id="desc">
+            Stock up on this comfy-cool polo featuring the new Google 'G.'
+          </p>
+          <p>Features:</p>
+          <ul>
+            <li>50% polyester / 25% cotton / 25% rayon</li>
+            <li>Tri-blend fabric retains shape and elasticity.</li>
+            <li>Retail fit.</li>
+            <li>Single front pocket.</li>
+            <li>Three-button placket.</li>
+            <li>Structured collar holds shape through repeated washing.</li>
+            <li>
+              Available in black with the Google 'G' icon embroidered at left
+              chest.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <button id="add--cart" class="demo-only">Add to Cart</button>
+    </div>
+  </body>
+</html>
