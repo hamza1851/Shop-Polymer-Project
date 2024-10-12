@@ -19,7 +19,6 @@ body {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 1.5rem;
 }
 .container {
   height: 100%;
@@ -280,28 +279,29 @@ section {
 }
 
 .product {
-  height: 25vh;
-  width: 45vw;
+  height: auto;
+  width: auto;
   margin: 0 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .product__image {
-  height: 80%;
+  height: auto;
+  width: 80%;
 }
 
 .title {
-  height: 10%;
-  font-size: 1.3rem;
+  /* height: 10%; */
+  font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   color: #202020;
 
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .price {
@@ -314,6 +314,20 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(16, 1fr); */
+}
+
+@media screen and (min-width: 768px) {
+  .mens-outerwear-page {
+    width: 80%;
+    margin: 0;
+    display: block;
+  }
+
+  .products-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(16, 1fr); */
+  }
 }
 
 /* Single Product Styles */
