@@ -525,7 +525,7 @@ section {
 /* Checkout Form */
 .checkout-form {
   box-sizing: border-box;
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   font-size: 1.6rem;
   display: flex;
@@ -580,7 +580,10 @@ section {
   display: flex;
   justify-content: space-between;
 }
-
+#payment-section {
+  display: flex;
+  flex-direction: column;
+}
 .sticky-button {
   background-color: #172c50;
   color: white;
@@ -597,4 +600,18 @@ section {
 .sticky-button a {
   text-decoration: none;
   color: white;
+}
+#customer-details {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .checkout-form {
+    height: 100vh;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 5rem;
+  }
 }

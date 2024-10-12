@@ -27,12 +27,6 @@
           ><img class="cart--icon__image" src="images/cart-icon.png" alt="Cart"
         /></a>
       </div>
-      <div class="nav__links">
-        <a class="nav__link" href="mens-outerwear.html">Men's Outerwear</a>
-        <a class="nav__link" href="ladies-outerwear.html">Ladies Outerwear</a>
-        <a class="nav__link" href="mens-tshirts.html">Men's T-Shirts</a>
-        <a class="nav__link" href="ladies-tshirts.html">Ladies T-Shirts</a>
-      </div>
     </nav>
     <!-- Drawer -->
     <aside class="drawer">
@@ -51,42 +45,57 @@
     </header>
     <!-- Form -->
     <form class="checkout-form" action="">
-      <h4 class="checkout-headings">Account Information</h4>
-      <div class="row input-row">
-        <input class="checkout-form__input" type="email" placeholder="Email" />
-      </div>
-      <div class="row input-row">
-        <input
-          class="checkout-form__input"
-          type="tel"
-          placeholder="Phone Number"
-        />
-      </div>
-      <h4 class="checkout-headings">Shipping Address</h4>
-      <div class="row input-row">
-        <input class="checkout-form__input" type="text" placeholder="Address" />
-      </div>
-      <div class="row input-row">
-        <input class="checkout-form__input" type="text" placeholder="City" />
-      </div>
-      <div class="row input-state">
-        <input
-          class="checkout-form__input"
-          type="text"
-          placeholder="State/Province"
-        />
-        <input
-          class="checkout-form__input"
-          type="text"
-          placeholder="Zip/Postal Code"
-        />
-      </div>
-      <div class="row input-row">
-        <select class="checkout-form__input" name="Country" id="select-country">
-          <option value="United States">Canada</option>
-          <option value="Canada">Canada</option>
-        </select>
-      </div>
+      <section id="customer-details">
+        <h4 class="checkout-headings">Account Information</h4>
+        <div class="row input-row">
+          <input
+            class="checkout-form__input"
+            type="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="row input-row">
+          <input
+            class="checkout-form__input"
+            type="tel"
+            placeholder="Phone Number"
+          />
+        </div>
+        <h4 class="checkout-headings">Shipping Address</h4>
+        <div class="row input-row">
+          <input
+            class="checkout-form__input"
+            type="text"
+            placeholder="Address"
+          />
+        </div>
+        <div class="row input-row">
+          <input class="checkout-form__input" type="text" placeholder="City" />
+        </div>
+        <div class="row input-state">
+          <input
+            class="checkout-form__input"
+            type="text"
+            placeholder="State/Province"
+          />
+          <input
+            class="checkout-form__input"
+            type="text"
+            placeholder="Zip/Postal Code"
+          />
+        </div>
+        <div class="row input-row">
+          <select
+            class="checkout-form__input"
+            name="Country"
+            id="select-country"
+          >
+            <option value="United States">Canada</option>
+            <option value="Canada">Canada</option>
+          </select>
+        </div>
+      </section>
+
       <section id="payment-section">
         <h4 class="checkout-headings">Payment Method</h4>
         <div class="row input-row_checkbox">
