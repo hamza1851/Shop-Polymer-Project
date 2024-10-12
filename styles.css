@@ -302,6 +302,7 @@ section {
 
 /* Single Product Styles */
 .single-product {
+  height: 100vh;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -514,26 +515,23 @@ section {
 .input-row_checkbox {
   display: flex;
 }
-.checkout-form__checkbox {
-}
+
 .checkout-form__checkbox + label {
   font-size: 1.5rem;
   padding: 0.3rem;
 }
 
-.expiry{
+.expiry {
   font-size: 1.3rem;
   margin: 0.5rem 0;
 }
 
-
-.order-summary__row{
+.order-summary__row {
   display: flex;
   justify-content: space-between;
 }
 
-
-.sticky-button{
+.sticky-button {
   background-color: #172c50;
   color: white;
   outline: none;
