@@ -18,13 +18,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1.5rem; */
+  box-sizing: border-box;
+  padding: 1.5rem;
 }
 .container {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
