@@ -541,4 +541,10 @@ section {
   font-size: x-large;
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
+}
+.sticky-button a {
+  text-decoration: none;
+  color: white;
 }
