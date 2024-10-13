@@ -94,10 +94,7 @@
             <option value="Canada">Canada</option>
           </select>
         </div>
-      </section>
-
-      <section id="payment-section">
-        <h4 class="checkout-headings">Payment Method</h4>
+        <h4 class="checkout-headings">Billing Address</h4>
         <div class="row input-row_checkbox">
           <input
             class="checkout-form__checkbox"
@@ -107,7 +104,51 @@
           <label class="checkout-form__label"
             >Use different billing address</label
           >
+
+          <div class="diff--bill--addr">
+            <div class="row input-row">
+              <input
+                class="checkout-form__input"
+                type="text"
+                placeholder="Address"
+              />
+            </div>
+            <div class="row input-row">
+              <input
+                class="checkout-form__input"
+                type="text"
+                placeholder="City"
+              />
+            </div>
+            <div class="row input-state">
+              <input
+                class="checkout-form__input"
+                type="text"
+                placeholder="State/Province"
+              />
+              <input
+                class="checkout-form__input"
+                type="text"
+                placeholder="Zip/Postal Code"
+              />
+            </div>
+            <div class="row input-row">
+              <select
+                class="checkout-form__input"
+                name="Country"
+                id="select-country"
+              >
+                <option value="United States">Canada</option>
+                <option value="Canada">Canada</option>
+              </select>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section id="payment-section">
+        <h4 class="checkout-headings">Payment Method</h4>
+
         <div class="row input-row">
           <input
             class="checkout-form__input"
@@ -172,8 +213,10 @@
           <p class="expiry">Total</p>
           <p class="expiry">$225.39</p>
         </div>
-        <a id="cart-page__button"  href="#">
-          <button class="banner__button checkout-page__button">PLACE ORDER</button>
+        <a id="cart-page__button" href="#">
+          <button class="banner__button checkout-page__button">
+            PLACE ORDER
+          </button>
         </a>
       </section>
       <button class="sticky-button">PLACE ORDER</button>
