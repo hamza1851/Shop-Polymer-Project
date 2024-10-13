@@ -525,6 +525,9 @@ section {
   width: 18px;
   opacity: 0.5;
 }
+.total-amount {
+  padding: 1rem;
+}
 
 .item-total {
   width: 70%;
@@ -575,7 +578,7 @@ section {
 /* Checkout Form */
 .checkout-form {
   box-sizing: border-box;
-  height: 110vh;
+  height: 150vh;
   width: 100vw;
   font-size: 1.6rem;
   display: flex;
@@ -633,6 +636,7 @@ section {
 #payment-section {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0;
 }
 .sticky-button {
   background-color: #172c50;
@@ -663,5 +667,9 @@ section {
     flex-direction: row;
     align-items: flex-start;
     column-gap: 5rem;
+  }
+  .checkout-page__button {
+    margin: 2rem 0;
+    width: auto;
   }
 }
