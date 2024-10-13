@@ -149,6 +149,15 @@ section {
 .ladies-banner__image {
   background: url(images/ladies_outerwear.jpg);
 }
+.ladies-outerwear--banner {
+  background: url(images/ladies_outerwear.jpg);
+}
+.mens-tShirts--banner {
+  background: url(images/mens_tshirts.jpg);
+}
+.ladies-tShirts--banner {
+  background: url(images/ladies_tshirts.jpg);
+}
 
 .bg__image {
   height: 100%;
@@ -249,6 +258,8 @@ section {
     text-decoration: none;
   }
 }
+
+/* Mens Outerwear Page */
 
 .mens-outerwear-page {
   margin: 0;
