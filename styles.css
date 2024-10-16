@@ -90,8 +90,9 @@ body {
   position: absolute;
   left: -150%;
   top: 0;
-  display: none;
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  transition: left 0.8s ease;
 }
 
 .drawer__item {
