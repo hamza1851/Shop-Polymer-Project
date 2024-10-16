@@ -9,6 +9,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   height: 100vh;
+  width: 100vw;
 }
 
 /* Navbar Styles */
@@ -80,8 +81,8 @@ body {
   position: absolute;
   left: -150%;
   top: 0;
-  display: flex;
-  flex-direction: column;
+  display: none;
+  /* flex-direction: column; */
 }
 
 .drawer__item {
@@ -111,12 +112,13 @@ section {
   justify-content: center;
 }
 .banner {
-  height: 35.4rem;
-  max-height: 320px;
-  max-width: 1400px;
+  height: 65vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 2rem;
 }
 
 .banner__bottom {
@@ -161,11 +163,13 @@ section {
 
 .bg__image {
   height: 100%;
+  width: 100%;
   max-height: 320px;
-  max-width: 1400px;
+  max-width: 1234px;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .t-shirts {
@@ -437,6 +441,7 @@ section {
 
   .sticky-button {
     display: none;
+    width: 100vw;
   }
 
   .single-product__cart--button {
@@ -483,6 +488,7 @@ section {
   padding: 0 0.5rem;
 }
 .cart-item__details {
+  height: 72px;
   width: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -516,7 +522,7 @@ section {
   align-items: center;
   column-gap: 2rem;
   width: 100%;
-  height: 50%;
+  /* height: 50%; */
 }
 .cart-item__label {
   font-size: 1.6rem;
@@ -582,6 +588,18 @@ section {
   }
   #cart-page__button {
     display: inline;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .cart-item__details {
+    height: 87.5px;
+  }
+  .cart-item__detail {
+    flex-direction: column;
+    height: 61px;
+    /* text-align: start; */
+    align-items: flex-start;
   }
 }
 
@@ -660,7 +678,7 @@ section {
   outline: none;
   border: none;
   height: 6.4rem;
-  width: 100vw;
+  width: 100%;
   font-size: x-large;
   position: fixed;
   bottom: 0;
