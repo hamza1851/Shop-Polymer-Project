@@ -635,7 +635,6 @@ section {
   }
 }
 
-
 /* Checkout Form */
 .checkout-form {
   box-sizing: border-box;
@@ -650,6 +649,7 @@ section {
   margin-top: 5rem;
   /* align-items: center; */
 }
+
 .checkout-header {
   display: none;
   height: auto;
@@ -730,9 +730,13 @@ section {
   flex-direction: column;
 }
 
+.checkout-form__input:focus {
+  border-bottom: 2px solid #172c50;
+}
+
 @media screen and (min-width: 768px) {
   .checkout-form {
-    height: 100vh;
+    height: auto;
     max-width: 900px;
     flex-direction: row;
     align-items: flex-start;
