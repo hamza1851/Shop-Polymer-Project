@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar checkout-form__nav">
       <div class="container">
         <div class="menu">
           <img class="hamburger--icon" src="images/hamburger.png" alt="Menu" />
@@ -37,7 +37,7 @@
     </aside>
 
     <div class="mens-outer__header">
-      <h1 class="banner__label">Checkout</h1>
+      <h1 class="banner__label checkout-form__label">Checkout</h1>
       <span class="items__count">Demo Checkout</span>
     </div>
     <header class="checkout-header">
@@ -77,17 +77,19 @@
               placeholder="City"
             />
           </div>
-          <div class="row input-state">
-            <input
-              class="checkout-form__input"
-              type="text"
-              placeholder="State/Province"
-            />
-            <input
-              class="checkout-form__input"
-              type="text"
-              placeholder="Zip/Postal Code"
-            />
+          <div class="row input-state input-state__data">
+            <div class="input-state__data">
+              <input
+                class="checkout-form__input state"
+                type="text"
+                placeholder="State/Province"
+              />
+              <input
+                class="checkout-form__input zip__code"
+                type="text"
+                placeholder="Zip/Postal Code"
+              />
+            </div>
           </div>
           <div class="row input-row">
             <select
@@ -125,17 +127,19 @@
                   placeholder="City"
                 />
               </div>
-              <div class="row input-state">
-                <input
-                  class="checkout-form__input"
-                  type="text"
-                  placeholder="State/Province"
-                />
-                <input
-                  class="checkout-form__input"
-                  type="text"
-                  placeholder="Zip/Postal Code"
-                />
+              <div class="row input-state input-state__data">
+                <div class="input-state__data">
+                  <input
+                    class="checkout-form__input state"
+                    type="text"
+                    placeholder="State/Province"
+                  />
+                  <input
+                    class="checkout-form__input zip__code"
+                    type="text"
+                    placeholder="Zip/Postal Code"
+                  />
+                </div>
               </div>
               <div class="row input-row">
                 <select
@@ -202,7 +206,7 @@
               <option value="Canada">2021</option>
             </select>
             <input
-              class="checkout-form__input"
+              class="checkout-form__input zip"
               type="text"
               placeholder="Zip/Postal Code"
             />

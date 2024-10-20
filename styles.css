@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-
+* {
+  letter-spacing: 1px;
+}
 html,
 body {
   margin: 0;
@@ -8,12 +10,14 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  height: 100vh;
-  width: 100vw;
+  /* overflow: scroll; */
+  box-sizing: border-box;
 }
 
 /* Navbar Styles */
-
+.hero {
+  margin-bottom: 32px;
+}
 .navbar {
   height: auto;
   display: flex;
@@ -24,6 +28,7 @@ body {
 }
 .container {
   height: auto;
+  min-height: 6.4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -57,6 +62,7 @@ body {
   /* width: 10rem; */
 }
 .cart-icon {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,6 +73,18 @@ body {
 .cart--icon__image {
   height: 24px;
   width: 24px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px; /* Adjust this to control vertical positioning */
+  right: 6px; /* Adjust this to control horizontal positioning */
+  background-color: #172c50; /* To make the number stand out */
+  color: white;
+  border-radius: 50%;
+  padding: 0.7rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
 }
 .menu {
   display: flex;
@@ -80,15 +98,19 @@ body {
   height: 24px;
   width: 24px;
 }
+.back-icon {
+  height: 24px;
+  width: 24px;
+}
 
 /* Drawer */
 .drawer {
   background-color: white;
-  height: 100vh;
+  height: 100%;
   width: 25.6rem;
   padding: 2rem 0;
-  position: absolute;
-  left: -150%;
+  position: fixed;
+  left: -400%;
   top: 0;
   z-index: 1;
   display: flex;
@@ -114,10 +136,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
 }
 section {
-  margin: 0 0 4rem 0;
+  margin: 0 0 40px 0;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -129,7 +152,7 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .banner__bottom {
@@ -140,12 +163,17 @@ section {
   justify-content: center;
   align-items: center;
 }
-.banner__label {
+section .banner__label {
   font-size: 1.69rem;
   opacity: 0.8;
-  margin: 1rem auto;
+  margin: 32px auto;
   font-weight: 400;
   height: 25px;
+}
+
+#page-banner__label {
+  font-size: 16.9px;
+  margin-bottom: 10px;
 }
 
 .banner__button {
@@ -195,12 +223,12 @@ section {
 }
 .mens-tShirts-banner {
   width: 50%;
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 0 4rem;
 }
 .ladies-tShirts-banner {
   width: 50%;
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 0 4rem;
 }
 
@@ -213,7 +241,7 @@ section {
 
 .banner__image {
   height: 100%;
-  max-width: 700px;
+  max-width: 720px;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -221,17 +249,18 @@ section {
 
 /* Footer */
 .footer {
-  height: 6.8rem;
+  /* height: 6.8rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* width: 100%; */
 }
 
 .made-by {
-  height: 1.5rem;
-  width: 10.1rem;
-  font-size: 1.5rem;
+  /* height: 13px; */
+  /* width: 10.1rem; */
+  font-size: 13px;
   text-decoration: none;
   color: gray;
 }
@@ -264,18 +293,23 @@ section {
 
   .nav__link {
     height: 3.75rem;
-    width: 11.2rem;
+    /* width: 11.2rem; */
     padding: 0.9rem 0.5rem;
     line-height: 4rem;
     text-align: center;
     font-size: 1.3rem;
+    font-weight: 350;
+    letter-spacing: 1px;
     display: inline-block;
-    margin: 0 1rem;
+    margin: 0 1rem 2.2rem;
     color: black;
     text-decoration: none;
   }
   .banner {
     height: 450px;
+  }
+  .banner__label {
+    margin: 24px auto;
   }
 }
 
@@ -284,11 +318,13 @@ section {
 .mens-outerwear-page {
   margin: 0;
   display: none;
+  max-height: 320px;
 }
 .mens-outer__header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 15px 0 10px 0;
 }
 .items__count {
   opacity: 0.5;
@@ -296,7 +332,7 @@ section {
 }
 .products-section {
   width: 100vw;
-  max-width: 1400px;
+  max-width: 1440px;
 }
 .products-section a {
   text-decoration: none;
@@ -316,7 +352,7 @@ section {
   width: 80%;
   max-height: 300px;
   max-width: 300px;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .title {
@@ -341,7 +377,8 @@ section {
 
 @media screen and (min-width: 768px) {
   .mens-outerwear-page {
-    width: 80%;
+    width: 100%;
+    max-width: 1440px;
     margin: 0;
     display: block;
   }
@@ -353,10 +390,14 @@ section {
 }
 
 /* Single Product Styles */
+#menu-back {
+  visibility: visible;
+}
 .single-product {
   height: auto;
   padding-bottom: 8rem;
-  width: 80vw;
+  width: 100vw;
+  /* max-width: 1200px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -371,9 +412,12 @@ section {
 .details {
   box-sizing: border-box;
   width: 100%;
-
+  /* max-width: 400px; */
   padding: 0 2.4rem;
-  margin: 3.2rem 0;
+  margin: 64px 32px;
+}
+.single-cart-line {
+  opacity: 0.5;
 }
 .product__title {
   height: auto;
@@ -445,6 +489,8 @@ section {
 }
 .single-product__cart--button {
   display: none;
+  background-color: white;
+  border: 1px solid black;
 }
 
 @media screen and (min-width: 768px) {
@@ -452,23 +498,27 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    max-width: 90vw;
+    max-width: 1440px;
     padding-bottom: 0;
+    margin: 64px 32px;
   }
 
   .single-product__image {
-    flex-shrink: 0;
-    flex-grow: 1;
-    max-width: 40%;
+    /* flex-shrink: 0; */
+    /* flex-grow: 1; */
+    align-self: self-start;
+    max-width: 600px;
     height: auto;
-    max-height: 100%;
+    max-height: 600px;
   }
 
   .details {
-    flex-shrink: 1;
-    flex-grow: 2;
-    max-width: 60%;
-    padding-left: 20px;
+    /* flex-shrink: 1; */
+    /* flex-grow: 2; */
+    max-width: 400px;
+    /* padding-left: 20px; */
+    align-self: self-start;
+    margin: 0;
   }
 
   .sticky-button {
@@ -480,6 +530,7 @@ section {
     height: 36px;
     width: 186px;
     display: block;
+    font-size: 14px;
     text-decoration: none;
     color: #202020;
   }
@@ -493,8 +544,13 @@ section {
   align-items: center;
 }
 #cart-container__subsection {
+  /* height: 100vh; */
   width: 100vw;
-  max-width: 1400px;
+  max-width: 1380px;
+  margin-top: 20px;
+}
+.cart-page-container {
+  height: 100vh;
 }
 
 #add--cart {
@@ -508,11 +564,15 @@ section {
 }
 
 /* Cart Page */
+.cart-banner__label {
+  margin: 0 auto;
+}
+
 .single-cart-item {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 1.5rem 0;
+  margin: 2.4rem 0;
 }
 .cart-item-image {
   height: 72px;
@@ -525,6 +585,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 24px;
 }
 
 #cart-item__select {
@@ -557,7 +618,7 @@ section {
   /* height: 50%; */
 }
 .cart-item__label {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   opacity: 0.5;
 }
 .delete-button {
@@ -569,8 +630,8 @@ section {
   background-color: transparent;
 }
 .delete-button__icon {
-  height: 18px;
-  width: 18px;
+  height: 10px;
+  width: 10px;
   opacity: 0.5;
 }
 .total-amount {
@@ -583,13 +644,14 @@ section {
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
-  column-gap: 2rem;
+  column-gap: 2.5rem;
 }
 .billing-total {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  padding: 0 0.5rem;
 }
 #cart-page__footer {
   display: none;
@@ -598,11 +660,17 @@ section {
   display: none;
 }
 @media screen and (min-width: 768px) {
+  .cart-banner__label {
+    margin: 0 auto;
+  }
   .cart-item__details {
     flex-direction: row;
     align-items: center;
     column-gap: 1rem;
     flex-wrap: nowrap;
+  }
+  .cart-item__detail {
+    justify-content: space-between;
   }
   .delete-button {
     order: 1;
@@ -613,10 +681,10 @@ section {
   #cart-page__footer {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     bottom: 0;
-    left: 50%;
-    right: 50%;
+    /* left: 50%; */
+    /* right: 50%; */
   }
   #cart-page__button {
     display: inline;
@@ -636,17 +704,27 @@ section {
 }
 
 /* Checkout Form */
-.checkout-form {
+.input-row {
   box-sizing: border-box;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkout-form__nav {
+  max-height: 12rem;
+}
+.checkout-form {
+  /* box-sizing: border-box; */
   /* height: 150vh; */
   width: 100vw;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
   padding: 0 2rem 8rem 2rem;
   flex-grow: 1;
-  column-gap: 1rem;
-  margin-top: 5rem;
+  /* column-gap: 1rem; */
+  margin-top: 4rem;
   /* align-items: center; */
 }
 
@@ -663,16 +741,22 @@ section {
   font-weight: 500;
   margin: 1.5rem 0;
 }
-.row {
-  margin: 1rem 0;
-}
+
 .checkout-form__input {
   outline: none;
   width: 100%;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid grey;
-  padding: 1rem 0;
+  padding-top: 1rem;
+  opacity: 0.5;
+  height: 50%;
+}
+
+.checkout-form__label {
+  margin: 0 auto 10px auto;
+  font-size: 16.9px;
+  font-weight: 350;
 }
 
 .input-state {
@@ -734,13 +818,55 @@ section {
   border-bottom: 2px solid #172c50;
 }
 
+.checkout-form__input {
+  position: relative;
+}
+
+.checkout-form__input::placeholder {
+  position: absolute;
+  top: 20px; /* initial top position */
+  font-size: 16px;
+  color: #666; /* placeholder text color */
+  transition: top 0.2s ease; /* add transition effect */
+}
+
+.checkout-form__input:focus::placeholder {
+  top: 3px; /* move up when focused */
+  font-size: 12px; /* adjust font size */
+}
+
+.input-state__data {
+  display: flex;
+  /* width: 400px; */
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.state {
+  width: 200px;
+  padding-bottom: 10px;
+}
+.zip__code {
+  width: 200px;
+  padding-bottom: 10px;
+}
+.zip::placeholder {
+  top: 2px;
+}
+.zip:focus::placeholder {
+  top: -3px;
+}
+
 @media screen and (min-width: 768px) {
   .checkout-form {
     height: auto;
     max-width: 900px;
     flex-direction: row;
     align-items: flex-start;
-    column-gap: 5rem;
+    /* column-gap: 2rem; */
+  }
+  #payment-section {
+    margin-left: 80px;
   }
   .checkout-page__button {
     margin: 2rem 0;
