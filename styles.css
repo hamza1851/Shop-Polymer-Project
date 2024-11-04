@@ -575,6 +575,9 @@ section .banner__label {
 }
 
 /* Cart Page */
+#cart-label-heading {
+  font-size: 16.9px;
+}
 .cart-banner__label {
   margin: 0 auto;
 }
